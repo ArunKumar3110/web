@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cvent Webinar Invitation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    header img.logo {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    .webinar-banner {
+      background-color: #ffffff;
+      max-width: 900px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .webinar-banner .left, .webinar-banner .right {
+      flex: 1 1 400px;
+      padding: 30px;
+    }
+
+    .left h2 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    .event-details {
+      background-color: #eef1f5;
+      padding: 10px 15px;
+      margin: 20px 0;
+      display: inline-block;
+      border-left: 4px solid #0073e6;
+    }
+
+    .register-button {
+      background-color: #003366;
+      color: white;
+      padding: 12px 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #0055aa;
+      transform: scale(1.05);
+    }
+
+    .right img {
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 10px 20px;
+      color: #888;
+      font-size: 14px;
+    }
+
+    footer .social-icons {
+      margin: 20px 0;
+    }
+
+    .social-icons img {
+      width: 24px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .webinar-banner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right img {
+        width: 60%;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cvent_logo_2022.svg/2560px-Cvent_logo_2022.svg.png" alt="Cvent Logo" class="logo">
+  </header>
+
+  <section class="webinar-banner">
+    <div class="left">
+      <h2>Better Together: Unlocking the Keys to Event Success</h2>
+      <div class="event-details">
+        Thursday, November 14, 2024<br>
+        11 AM ET | 4 PM GMT
+      </div>
+      <button class="register-button" onclick="register()">Register Now</button>
+    </div>
+    <div class="right">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAx..." alt="Webinar Group Photo" />
+    </div>
+  </section>
+
+  <section class="content">
+    <p>Hi there,</p>
+    <p>
+      As the year comes to a close, we know you’re focused on ending Q4 strong and setting up for success in 2025 (how did we get here?)! That’s why we’re inviting you to our <a href="#" style="color: #0073e6; text-decoration: underline;">Q4 Partner Town Hall</a> on Thursday, November 14, 2024 to help you do just that!
+    </p>
+    <p>Here’s what you can expect:</p>
+    <ul>
+      <li><strong>Exclusive Product Roadmap Insights:</strong> Get an inside look at Cvent’s upcoming product innovations, directly from our VP of Product Management.</li>
+      <li><strong>Latest Event & Travel Trends:</strong> Stay ahead with insights into sourcing and travel to enhance client experiences.</li>
+      <li><strong>Key Resources & Tools:</strong> Streamline workflows and boost efficiency with new tools.</li>
+      <li><strong>Interactive Fun & Giveaways:</strong> We’ll be running fun prize giveaways throughout the session!</li>
+    </ul>
+    <p>Don’t miss this opportunity to gain knowledge and tools to make Q4 your <strong>most successful quarter yet!</strong></p>
+    <button class="register-button" onclick="register()">Register here!</button>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/LinkedIn_Logo_2013.svg" alt="LinkedIn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter">
+    </div>
+    <p>© 2024 Cvent, Inc. <br>
+    1765 Greensboro Station Place, Tysons Corner, VA 22102<br>
+    <a href="#" style="color: #0073e6;">Manage Email Preferences or Unsubscribe</a><br>
+    <a href="#" style="color: #0073e6;">Privacy Policy</a> | <a href="#" style="color: #0073e6;">cvent.com</a></p>
+  </footer>
+
+  <script>
+    function register() {
+      alert("Thanks for your interest! Registration functionality will be available soon.");
+    }
+  </script>
+</body>
+</html>
